@@ -1,0 +1,1523 @@
+﻿<!DOCTYPE html>
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<head>
+
+    <!-- TITLE OF SITE -->
+    <title>Brandon's Portfolio</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Free Responsive Animated Portfolio Template" />
+    <meta name="keywords" content="portfolio, template, responsive, bootstrap" />
+    <meta name="developer" content="TemplateOcean">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="noindex">
+
+    <!-- FAV AND TOUCH ICONS   -->
+    <link rel="icon" href="images/logoicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,900' rel='stylesheet' type='text/css'>
+    <!-- font-family: 'Merriweather', serif; -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Image Slider -->
+    <link rel="stylesheet" href="css/plagin-css/owl.carousel.css">
+
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="icons/rik-icons/styles.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    
+    
+    <!--   COUSTOM CSS link  -->
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link rel="stylesheet" href="css/style.css"/>-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--[if lt IE 9]>
+        <script src="js/plagin-js/html5shiv.js"></script>
+        <script src="js/plagin-js/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/prism.css" rel="stylesheet" />
+
+</head>
+<body class="style-1">
+
+    <!-- Start: Preloader Section
+    =================================== -->
+    <div id="main-preloader" class="main-preloader semi-dark-background">
+        <div class="container full-height">
+            <div class="row full-height">
+                <div class="full-height col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+
+                    <div class="main-preloader-inner">
+
+                        <h1 class="preloader-percentage">
+                            <span class="preloader-percentage-text">0%</span> <!-- Show Percentage Number -->
+                            <!-- <span class="percentage">%</span> -->
+                        </h1>
+                        <div class="preloader-bar-outer">
+                            <div class="preloader-bar"></div> <!-- Percentage Precess Bar -->
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Preloader Section
+    =================================== -->
+    <!-- Start: Navbar  Area
+    ============================= -->
+    <nav class="navbar navbar-fixed-top main-navbar-top navbar-top-js" id="main-navbar-top">
+        <div class="container relative">
+            <div class="navbar-header">
+
+                <!-- Menu Button show Mobile view -->
+                <button type="button" class="nav-trigger nav-trigger-animate" data-target="#js-navbar-menu">
+                    <span aria-hidden="true" class="icon"></span>
+                </button>
+
+                <!-- TEMPLATE LOGO LIGHT -->
+                <!--<a class="navbar-brand light-logo btn-scroll" href="#home-section"><img src="images/logo.png" alt="" class="img-responsive"></a>-->
+                <a class="navbar-brand light-logo btn-scroll" href="#home-section"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAIFElEQVR4nO2bbYxUVxnH/8+5sHNndhcbIBoTEkyDkMir0jfbom3TSkDSZnfmDmqUQlJLNmD8VEto9Iv0xQ9GYxvaSnTX0kR37swQLRbSGigFqRWlxZakULUhjTHaom13Z+bOLnP+fthduPfOnZ07987wxfl9O2//85wnZ859zssAXbp0+X9GOinu5KxlEN5GwRoQSyFcLCLzSfQBgAjGSf4HlAsQnhPKGRjGUXNw9Hwn7XLTdgdU8+lVBO4lJAtgUTQVviuUnAifSWQKf2mrgT7a4gASUi1aG0nuBnBzOzSvIL8X6EcS6cIhEbC92m1wQClnrVUG94K4oR0GNUb+oKW2ozddPN1W1agNObzVrPSPPSaQnQCMBtXGADlO8mUFnAXlbWdy7r8/Nt43DgAf9o33mXMnPw7hpzWwXARfBLAOmFojAqgJ8Xiit7RLNh6qRrXdTSQHODlrCRRzBD4bUKxBHKJwOJkqH2zVUA5vNSvzSpuE2AZwQ5CNAjkNQ2XNgdG/RbHfq9Ui5Zz1eVE8CGC+r4gQjCpyTyJTOBvXMACo5qyVNPhdElZA8UWCX05lCq/G6aMlBzh25ksUFAH0+oreAjGUtPIvxTGmEZWidQe0fhKQpb6ikigZMAftF6Nqh3ZAOWfdIIpHUDd47jfLqSHZsr8U1YgwMGclHYM/AXGf3zQSd6Ws/MkouqEc4OSsJVR8Fd5pTwoeSKXzP4zScVTKduZBETwKt+2C9wW80UwX/t6qnmpWgcNbTSjm4Bs8wPuu9uABIGXlfwBw+5QNl61ZSMoon9+QaFWvqQMq/WOP+Vd7Ch5IZgo/b7WzdpHMFPZRsMuXfV211Ptwq1qz/gRKOWutmpr6ru88R5KZwrZWO+oElULmFyC2uLJqGry+N1N4LaxGwxlAQpTBvfAGOW+Z5dTOCLZ2BLMmOwC6N06Ggnq8FY2GDqgWrY114a2SHZ1e7VtBsvY4tLof7vUAvMXJp9eH1ZhlBnC3tzf8KjloH2ndzM6SzNrHRJB35xHyUNj2gWvARHFgdU0br7s1FbgySoRXyWca7eBKgLwh0M8mtNonWXuiVe0ZqjlrpVY8A9d4lKqtTAweeLNZ28AZoLVyLywg8Nt2hbcuegHeRMgTVYVXSoXBT0YVSmTtNwAcdufRN4ZGBDpg+jDDnTMSzbRwEPycAfUcn75/bgyNEW/aP4Zg6hzg5Kxl8J7kjCVT5YNRDQsLibXVBf/1h7mhSWr1HAD3Ar3YyVlLmrWrnwFK3+7NkOPt2nsDQDKTl2QmL9SyiIDHsRR+I6quZO0KICc8mQbuaNauzgEEVnnS5MtRjZqNVNb+B0QP+TpfEUtUeMyd1OSqRlVnqJ8BlGW+Cu1e/GYj1pmfQM760ssa1Z2h3gHCaz1pw+jIEXW5MLhItHrK2zdCh7BBCLXPVt9YApgTINPvTk1g4mIco/xcjguI+ihEY18c7epEz/tzeyavZAjmNWsT9Bn0OKD/0pyxOEaFhjhsnl3xyzgS/dd84LWV3rEE0XQ7fNUQ6egtVSOCHODx4ticS0292B643ln+5lfjKIx9cI3XVkHT2RvkgI/ciR70LIhjlJ/Z4gAofDOOdqJnYqEng/ywWZuAzyDe8aRrNf9JbFtoEAcE3TOEhqJ8tqp3gmu6atTlCM+5kxpYHseoFom1DhBc7kufa1R3hjoHCOWMJz11XdV2GsQBTbevs0Lc5pXjmQY1L1MfBxjGUeiaO2cdh7easm3EiWXcNLPFAUI+E1WXOSvpgLd69LQ62qxd3QyYepzAd11ZfZV5pU1RDQuPnEpcXPCzqK0rBu4GkHJlXTCz9l+btQuMA4SS86Q1t0Y1LCR/0lK7R7b/dLJ51WD8NgoxGqZdsAPENxUFG6s5a2VU4xowDuCkgEPmxfk396aL/4wqNFEcWA2B5yBUjNr+MG0brrqVvHUC4C2XKwpsM50PdcpytXHymQKBQVfW8WQm/4UwbRuGwgL9iDtNwqoUraYHDFcbp5C+0zd4CLEnbPuGM4CEOAXrJMCbXLnnTa3WStYej2Jsu+Gv7+53JntOA7hy9CU4kUzn14XVaDwDBNRS2wHA9U2UpY7BWFvWduJM9uyFe/BArVaTb7WiMetusDddPC2E96qJ+ErZzjzYSiedoGJndgP4ujtPgB/1Ze3XGzQJpOl2ONFb2iWCP3s6EjxayadjbVzi4NiZ7RD/71xOJXT4G6EZmjpANh6qQhmbAbhPhgSQp8uFzHda7TAuFTuzm4In4V2/3oPG5ii3S6E3H6XC4PWK6gjqn7A9a2oZ6vTCOLXgzX0KkK/5isrUcmcqa78SRbe1R1JF6y5qHkD9O6HzUGqoU5en0/36FzwAGBfhgJku/C6qduvP5PLpG0XkIIiF/jIR2FKT70/f1cVmojiwWmvje/7v/DTvUcumVNb+Y5w+oj2ULKSvJWUUwHUBxQRwmOBIcqz/N63uIpmzkhXhPQLcOx3eBtgop6CxOZm1mx54NCP6U9nnNySqpd6HKfg2Ao/XAUxdgZ+A8JhAzoqot51L+l/zpvYB+AjoM+eoT6BWW6oVPjO9n78V3l2dm0sC/Dih5aE41+luYp/EjuesNYbCE+59Q0cQnDCktrNn8EDTQ47WZNuEk0+vn36ZEToMDclxIfaYVv6FNusC6MQfJooDK6jVlun7+cURZS4IMSpGbX+YVx5x6PRfZpZQ6dtJWSMiSwF+ClMPLmdiiXEAFwG5QPK8AK8J5aUwJzldunTp0qVLly5x+R+/7PIyzCaLHAAAAABJRU5ErkJggg==" alt="" class="img-responsive"></a>
+
+            </div>
+
+            <!-- Main Menu List -->
+            <div class="navbar-collapse" id="js-navbar-menu">
+                <ul class="nav navbar-nav navbar-right btn-scroll" id="navbar-nav">
+                    <li><a class="btn-nav" href="#about-section">about</a></li>
+                    <li><a class="btn-nav" href="#portfolio-section">portfolio</a></li>
+                    <!-- <li><a class="btn-nav" href="#portfolio-section">Blog</a></li>-->
+                    <li><a class="btn-nav" href="#miniproj-section">JS CHALLENGES</a></li>
+
+                    <li><a class="btn-nav" href="#contact-us-section">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Side Navigation Button -->
+            <div class="navbar-collapse-right hidden-xs ">
+                <ul class="nav navbar-nav navbar-right btn-scroll">
+                    <li><a class="btn-nav" href="#contact-us-section">Get in Touch <i class="icon icon-arrow-right"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End: Navbar Area
+    ============================= -->
+    <!--Start: 1st Section
+        - HOME PAGE
+    ====================================-->
+    <div class="section section-item home-section overflow hide-overlay overlay-color bg-image-1 wow" id="home-section">
+        <div class="inner-container ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                        <div class="home-content-outer text-center">
+                            <div class="overflow">
+                                <div class="heading-outer left-right relative">
+                                    <div class="heading-outer top-bottom relative">
+                                        <div class="overflow p-t-40 p-l-40 p-r-40 p-b-40">
+                                            <div class="section-heading-outer">
+                                                <h1 class="heading">"You never fail until<br /> you stop trying."<br /><span class="color">-Albert Einstein</span></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="overflow m-t-30">
+                                <div class="list-view">
+                                    <ul class="nav">
+                                        <li><a class="btn-mask" href="#about-section">DESIGNER</a></li>
+                                        <li><a class="btn-mask" href="#portfolio-section">DEVELOPER</a></li>
+                                        <li><a class="btn-mask" href="#contact-us-section">FREELANCER</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next Section Arrow -->
+                    <div class="footer-button">
+                        <div class="overflow m-t-30">
+                            <div class="btn-form-outer btn-scroll">
+                                <!-- Button Area -->
+                                <a href="#services-section" class="btn"><i class="icon icon-arrow-carrot-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Home Page Buttom Navigation -->
+                    <nav class="navbar navbar-fixed-top main-navbar-top home-nav overflow">
+                        <div class="container relative home-nav-inner">
+                            <div class="navbar-header">
+
+                                <!-- TEMPLATE LOGO LIGHT -->
+                                <a class="navbar-brand light-logo" href="#"><img src="images/logoicon.png" alt="" class="img-responsive"></a>
+                            </div>
+
+                            <div class="navbar-collapse-right">
+                                <ul class="nav navbar-nav navbar-right btn-scroll">
+                                    <li>
+                                        <a class="btn-nav btn-mask" href="#contact-us-section">Get in Touch <i class="icon icon-arrow-right"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- End: Home Page Buttom Navigation -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End: 1st Section
+        - HOME PAGE
+    ====================================-->
+    <!--====================================-->
+    <!--Start: 2nd Section
+        - About Me PAGE
+    ====================================-->
+    <div class=" section section-item combine-section hide-overlay overflow dark-background" id="about-section">
+        <div class="inner-container team-member dark-background">
+            <div class="container">
+                <div class="row section-separator sp-bottom">
+                  
+                    <!-- Start: Section Heading -->
+                    <div class="section-header col-sm-10 col-sm-offset-1">
+                        <div class="overflow">
+                            <div class="line-outer">
+                                <div class="line wow"></div>
+                            </div>
+                        </div>
+                        <div class="overflow">
+                            <div class="section-heading-outer m-b-15">
+                                <p class="sub-heading wow">ABOUT ME</p>
+                            </div>
+                        </div>
+                        <div class="overflow">
+                            <div class="section-heading-outer p-l-50 p-r-50">
+                                <h2 class="section-heading wow">Who is Brandon Swaney?</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: Section Heading -->
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-sm-6 grid-item m-t-30">
+                        <div class="row">
+
+                            <div class="col-md-6 each-item overflow text-center relative wow">
+                                <div class="item-inner overflow absolute">
+
+                                    <div class="profile-outer center">
+                                        <div class="profile-image">
+                                            <img src="images/me.jpg" alt="Team Member" class="">
+                                        </div>
+                                        <div class="profile-content">
+                                            <span class="name">BRANDON SWANEY</span>
+                                            <span class="position">Full Stack Developer</span>
+                                        </div>
+                                    </div>
+                                    <div class="content-detail">
+                                        <p>
+                                            I am a Full Stack .NET Developer from Asheboro, North Carolina currently studying at Coder Foundry. <br />I am teachable, determined and willing to take on challenges. <br />
+                                            My goal is to intake as much information as possible and develop the best product I can. I am a gamer at heart, and will push my career towards game development.
+                                        </p>
+                                        
+                                            
+                                        
+                                        
+                                    </div>
+
+                                </div>
+                            </div> <!-- End: .each-item -->
+
+
+                        </div>
+                    </div> <!-- End: .col-xs-12 -->
+
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12 overflow relative">
+                                <img src="/images/me.jpg" width="500" />
+                            </div>
+                        </div>
+                    </div>
+                <!-- <div class="col-sm-1">
+                     <div class="row">
+                         <i class="fa fa-html5 fa-5x color" aria--hidden="true"></i>
+                     </div>
+                 </div>
+                 <div class="col-sm-1">
+                     <div class="row">
+                         <i class="fa fa-css3 fa-5x color" aria--hidden="true"></i>
+                     </div>
+                 </div>-->
+             
+               
+
+                </div> <!-- End: .row -->
+            </div> <!-- End: .container -->
+        </div> <!-- End: .inner-container -->
+
+    </div>
+    <!--End: 2nd Section
+        - About Me PAGE
+    ====================================-->
+    <!--Start: 3rd Section
+        - Portfolio PAGE
+    ====================================-->
+    <div class=" section section-item semi-dark-background" id="portfolio-section">
+        <div class="inner-container ">
+            <div class="container">
+                <div class="row section-separator">
+
+                    <div class="col-sm-12 overflow">
+                        <div class="row portfolio-container wow">
+                            <div class="portfolio-wrapper pagination-style-1 owl-carousel">
+
+                                <!-- SLIDES -->
+
+                                <div class="item ">
+
+                                    <div class="porifolio-section overflow">
+
+                                        <div class="col-xs-10 col-xs-offset-1">
+                                            <div class="row">
+                                                <div class="image text-center">
+                                                    <img src="images/Blog/blg2.jpg" alt="Features Image">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="each-portfolio-heading">
+                                            <div class="heading-text overflow wow">
+                                                <div class="line"></div>
+                                                <div class="overflow">
+                                                    <div class="sub-heading-outer">
+                                                        <p class="sub-heading">PORTFOLIO</p>
+                                                    </div>
+                                                </div>
+                                                <div class="text overflow">
+                                                    <div class="inner">
+                                                        Blog Life
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="link-list overflow wow">
+                                                <div class="link one overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">BLOG DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="link two overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-slider right-icon btn-mask" data-element="slider">VIEW SLIDES <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="line hidden-xs"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-10 col-md-offset-1 col-sm-12 slider-outer">
+                                            <div class="overflow">
+                                                <div class="slider text-center">
+
+                                                    <div class="project-slider-outer">
+                                                        <div class="project-slider owl-carousel">
+
+                                                            <div class="item">
+                                                                <img src="images/Blog/blg2.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/Blog/blg1.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/Blog/blg4.jpeg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/Blog/blg3.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/Blog/blg5.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="btn-outer text-left">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 project-detail-outer">
+
+                                            <div class="project-detail">
+                                                <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                    <div class="col-sm-6 col-xs-12 vertical-middle project-detail-content">
+
+                                                        <div class="overflow">
+                                                            <div class="heading-outer">
+                                                                <h2 class="heading">Blog Life</h2>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <ul class="nav list">
+                                                                <li><p class="sub-heading">PORTFOLIO</p></li>
+                                                                <li><p class="sub-heading">TBD</p></li>
+                                                            </ul>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="pera-outer m-t-30">
+                                                                <p>These are the details about this blog.</p>
+                                                                <p>Please click "Read the Blog" for more information.</p>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="full-view-outer">
+                                                                <a href="#" class="btn right-icon btn-mask">READ THE BLOG <i class="icon icon-arrow-right"></i></a>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                    </div> <!-- End: END LEFT SIDE -->
+                                                    <!-- Right side Image -->
+                                                    <div class="col-sm-6 col-xs-12 vertical-middle overflow project-detail-image">
+                                                        <div class="row text-right display-full">
+                                                            <div class="project-detail-image-outer display-full">
+                                                                <img src="images/Blog/blg2.jpg" alt="Portfolio Image">
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- End: RIGHT SIDE -->
+
+                                                </div> <!-- End: .project-detail-content -->
+
+                                                <div class="clearfix"></div>
+
+                                                <!-- Back Button Area -->
+                                                <div class="overflow">
+                                                    <div class="btn-outer text-center m-t-30">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                                <!-- End: Back Button Area -->
+
+                                            </div> <!-- End: .project-detail -->
+
+                                        </div> <!-- End: .col-xs-12 -->
+
+                                    </div>
+
+                                </div> <!-- End: .item -->
+                                <div class="item ">
+
+                                    <div class="porifolio-section overflow">
+
+                                        <div class="col-xs-10 col-xs-offset-1">
+                                            <div class="row">
+                                                <div class="image text-center">
+                                                    <img src="images/features-1.jpg" alt="Features Image">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="each-portfolio-heading">
+                                            <div class="heading-text overflow wow">
+                                                <div class="line"></div>
+                                                <div class="overflow">
+                                                    <div class="sub-heading-outer">
+                                                        <p class="sub-heading">PORTFOLIO</p>
+                                                    </div>
+                                                </div>
+                                                <div class="text overflow">
+                                                    <div class="inner">
+                                                        Project Two
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="link-list overflow wow">
+                                                <div class="link one overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="link two overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-slider right-icon btn-mask" data-element="slider">VIEW SLIDES <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="line hidden-xs"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-10 col-md-offset-1 col-sm-12 slider-outer">
+                                            <div class="overflow">
+                                                <div class="slider text-center">
+
+                                                    <div class="project-slider-outer">
+                                                        <div class="project-slider owl-carousel">
+
+                                                            <div class="item">
+                                                                <img src="images/features-3.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/features-4.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/features-5.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/features-6.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/features-7.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="btn-outer text-left">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 project-detail-outer">
+
+                                            <div class="project-detail">
+                                                <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                    <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+
+                                                        <div class="overflow">
+                                                            <div class="heading-outer">
+                                                                <h2 class="heading">Project Two</h2>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <ul class="nav list">
+                                                                <li><p class="sub-heading">PORTFOLIO</p></li>
+                                                                <li><p class="sub-heading">TBD</p></li>
+                                                            </ul>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="pera-outer m-t-30">
+                                                                <p>Description about this project will be in this seciton.</p>
+                                                                <p>Please click the link below to view the project.</p>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="full-view-outer">
+                                                                <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                    </div> <!-- End: END LEFT SIDE -->
+                                                    <!-- Right side Image -->
+                                                    <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                        <div class="row text-right display-full">
+                                                            <div class="project-detail-image-outer display-full">
+                                                                <img src="images/features-2.jpg" alt="Portfolio Image">
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- End: RIGHT SIDE -->
+
+                                                </div> <!-- End: .project-detail-content -->
+
+                                                <div class="clearfix"></div>
+
+                                                <!-- Back Button Area -->
+                                                <div class="overflow">
+                                                    <div class="btn-outer text-center m-t-30">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                                <!-- End: Back Button Area -->
+
+                                            </div> <!-- End: .project-detail -->
+
+                                        </div> <!-- End: .col-xs-12 -->
+
+                                    </div>
+
+                                </div> <!-- End: .item -->
+                                <div class="item ">
+
+                                    <div class="porifolio-section overflow">
+
+                                        <div class="col-xs-10 col-xs-offset-1">
+                                            <div class="row">
+                                                <div class="image text-center">
+                                                    <img src="images/features-1.jpg" alt="Features Image">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="each-portfolio-heading">
+                                            <div class="heading-text overflow wow">
+                                                <div class="line"></div>
+                                                <div class="overflow">
+                                                    <div class="sub-heading-outer">
+                                                        <p class="sub-heading">PORTFOLIO</p>
+                                                    </div>
+                                                </div>
+                                                <div class="text overflow">
+                                                    <div class="inner">
+                                                        Project Three
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="link-list overflow wow">
+                                                <div class="link one overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="link two overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-slider right-icon btn-mask" data-element="slider">VIEW SLIDES <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="line hidden-xs"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-10 col-md-offset-1 col-sm-12 slider-outer">
+                                            <div class="overflow">
+                                                <div class="slider text-center">
+
+                                                    <div class="project-slider-outer">
+                                                        <div class="project-slider owl-carousel">
+
+                                                            <div class="item">
+                                                                <img src="images/features-3.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/features-4.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/features-5.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/features-6.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/features-7.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="btn-outer text-left">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 project-detail-outer">
+
+                                            <div class="project-detail">
+                                                <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                    <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+
+                                                        <div class="overflow">
+                                                            <div class="heading-outer">
+                                                                <h2 class="heading">Project Three</h2>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <ul class="nav list">
+                                                                <li><p class="sub-heading">PORTFOLIO</p></li>
+                                                                <li><p class="sub-heading">TBD</p></li>
+                                                            </ul>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="pera-outer m-t-30">
+                                                                <p> importantstuffaboutthisproject.</p>
+                                                                <p>moreimportantstuffaboutthisproject.</p>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="full-view-outer">
+                                                                <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                    </div> <!-- End: END LEFT SIDE -->
+                                                    <!-- Right side Image -->
+                                                    <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                        <div class="row text-right display-full">
+                                                            <div class="project-detail-image-outer display-full">
+                                                                <img src="images/features-2.jpg" alt="Portfolio Image">
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- End: RIGHT SIDE -->
+
+                                                </div> <!-- End: .project-detail-content -->
+
+                                                <div class="clearfix"></div>
+
+                                                <!-- Back Button Area -->
+                                                <div class="overflow">
+                                                    <div class="btn-outer text-center m-t-30">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                                <!-- End: Back Button Area -->
+
+                                            </div> <!-- End: .project-detail -->
+
+                                        </div> <!-- End: .col-xs-12 -->
+
+                                    </div>
+
+                                </div> <!-- End: .item -->
+
+                            </div> <!-- End: .swiper-wrapper -->
+                        </div> <!-- End: .miniproj-container -->
+                    </div> <!-- End: .col-xs-12 -->
+
+                </div> <!-- End: .row -->
+            </div> <!-- End: .container -->
+        </div> <!-- End: .inner-container -->
+
+    </div>
+    <!--End: 3rd Section
+        - Portfolio PAGE
+    ====================================-->
+    <!--Start: 4th Section
+        - JS CHALLENGES PAGE
+    ====================================-->
+    <div class=" section section-item dark-background" id="miniproj-section">
+        <div class="inner-container ">
+            <div class="container">
+                <div class="row section-separator">
+
+                    <div class="col-sm-12 overflow">
+                        <div class="row portfolio-container wow">
+                            <div class="portfolio-wrapper pagination-style-1 owl-carousel">
+
+                                <!-- SLIDES -->
+
+                                <div class="item ">
+
+                                    <div class="porifolio-section overflow">
+
+                                        <div class="col-xs-10 col-xs-offset-1">
+                                            <div class="row">
+                                                <div class="image text-center">
+                                                    <img src="images/fizzbuzz.jpg" alt="Features Image">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="each-portfolio-heading">
+                                            <div class="heading-text overflow wow">
+                                                <div class="line"></div>
+                                                <div class="overflow">
+                                                    <div class="sub-heading-outer">
+                                                        <p class="sub-heading">JS CHALLENGES</p>
+                                                    </div>
+                                                </div>
+                                                <div class="text overflow">
+                                                    <div class="inner">
+                                                        FizzBuzz
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="link-list overflow wow">
+                                                <div class="link one overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="link two overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-slider right-icon btn-mask" data-element="slider">VIEW SLIDES <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="line hidden-xs"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-10 col-md-offset-1 col-sm-12 slider-outer">
+                                            <div class="overflow">
+                                                <div class="slider text-center">
+
+                                                    <div class="project-slider-outer">
+                                                        <div class="project-slider owl-carousel">
+
+                                                            <div class="item">
+                                                                <img src="images/fizzbuzz.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/fb2.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/fb3.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/fb4.png" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/fb1.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="btn-outer text-left">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 project-detail-outer">
+
+                                            <div class="project-detail">
+                                                <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                    <div class="col-sm-6 col-xs-12 vertical-middle project-detail-content">
+
+                                                        <div class="overflow">
+                                                            <div class="heading-outer">
+                                                                <h2 class="heading">FizzBuzz</h2>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <ul class="nav list">
+                                                                <li><p class="sub-heading">JS CHALLENGE</p></li>
+                                                                <li><p class="sub-heading">TBD</p></li>
+                                                            </ul>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="pera-outer m-t-30">
+                                                                <p>
+                                                                    Please enter two numbers between 1 and 100 and click the "Solve" button.
+                                                                    The function will then cycle through all numbers between 1 and 100 and replace
+                                                                    any numbers divisible by your first entered number with "Fizz", any numbers divisible by
+                                                                    the second with "Buzz", and any divisible by both with "FizzBuzz".
+                                                                </p>
+                                                                <p>How many "Fizz" do you get? How many "Buzz"? What about "FizzBuzzs"? Click "See the Project" to test it out!</p>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="full-view-outer">
+                                                                <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                    </div> <!-- End: END LEFT SIDE -->
+                                                    <!-- Right side Image -->
+                                                    <div class="col-sm-6 col-xs-12 vertical-middle overflow project-detail-image">
+                                                        <div class="row text-right display-full">
+                                                            <div class="project-detail-image-outer display-full">
+                                                                <img src="images/fizzbuzz.jpg" alt="Portfolio Image">
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- End: RIGHT SIDE -->
+
+                                                </div> <!-- End: .project-detail-content -->
+
+                                                <div class="clearfix"></div>
+
+                                                <!-- Back Button Area -->
+                                                <div class="overflow">
+                                                    <div class="btn-outer text-center m-t-30">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                                <!-- End: Back Button Area -->
+
+                                            </div> <!-- End: .project-detail -->
+
+                                        </div> <!-- End: .col-xs-12 -->
+
+                                    </div>
+
+                                </div> <!-- End: .item -->
+                                <div class="item ">
+
+                                    <div class="porifolio-section overflow">
+
+                                        <div class="col-xs-10 col-xs-offset-1">
+                                            <div class="row">
+                                                <div class="image text-center">
+                                                    <img src="images/tacocat.jpg" alt="Features Image">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="each-portfolio-heading">
+                                            <div class="heading-text overflow wow">
+                                                <div class="line"></div>
+                                                <div class="overflow">
+                                                    <div class="sub-heading-outer">
+                                                        <p class="sub-heading">JS CHALLENGES</p>
+                                                    </div>
+                                                </div>
+                                                <div class="text overflow">
+                                                    <div class="inner">
+                                                        TacocaT
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="link-list overflow wow">
+                                                <div class="link one overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="link two overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-slider right-icon btn-mask" data-element="slider">VIEW SLIDES <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="line hidden-xs"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-10 col-md-offset-1 col-sm-12 slider-outer">
+                                            <div class="overflow">
+                                                <div class="slider text-center">
+
+                                                    <div class="project-slider-outer">
+                                                        <div class="project-slider owl-carousel">
+
+                                                            <div class="item">
+                                                                <img src="images/tacocat.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/pal1.jpeg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/pal2.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/pal3.jpeg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/pal4.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="btn-outer text-left">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 project-detail-outer">
+
+                                            <div class="project-detail">
+                                                <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                    <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+
+                                                        <div class="overflow">
+                                                            <div class="heading-outer">
+                                                                <h2 class="heading">TacocaT</h2>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <ul class="nav list">
+                                                                <li><p class="sub-heading">JS CHALLENGES</p></li>
+                                                                <li><p class="sub-heading">TBD</p></li>
+                                                            </ul>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="pera-outer m-t-30">
+                                                                <p>TacocaT is a Palindrome exercise. By entering in a word, the process will determine whether or not the input is a Palindrome.</p>
+                                                                <p>A Palindrome is a word, phrase, or sequence that reads the same backward as forward.</p>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="full-view-outer">
+                                                                <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                    </div> <!-- End: END LEFT SIDE -->
+                                                    <!-- Right side Image -->
+                                                    <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                        <div class="row text-right display-full">
+                                                            <div class="project-detail-image-outer display-full">
+                                                                <img src="images/tacocat.jpg" alt="Portfolio Image">
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- End: RIGHT SIDE -->
+
+                                                </div> <!-- End: .project-detail-content -->
+
+                                                <div class="clearfix"></div>
+
+                                                <!-- Back Button Area -->
+                                                <div class="overflow">
+                                                    <div class="btn-outer text-center m-t-30">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                                <!-- End: Back Button Area -->
+
+                                            </div> <!-- End: .project-detail -->
+
+                                        </div> <!-- End: .col-xs-12 -->
+
+                                    </div>
+
+                                </div> <!-- End: .item -->
+                                <div class="item ">
+
+                                    <div class="porifolio-section overflow">
+
+                                        <div class="col-xs-10 col-xs-offset-1">
+                                            <div class="row">
+                                                <div class="image text-center">
+                                                    <img src="images/sunsethill.jpg" alt="Features Image">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="each-portfolio-heading">
+                                            <div class="heading-text overflow wow">
+                                                <div class="line"></div>
+                                                <div class="overflow">
+                                                    <div class="sub-heading-outer">
+                                                        <p class="sub-heading">JS CHALLENGES</p>
+                                                    </div>
+                                                </div>
+                                                <div class="text overflow">
+                                                    <div class="inner">
+                                                        Sunset Hills
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="link-list overflow wow">
+                                                <div class="link one overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="link two overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-slider right-icon btn-mask" data-element="slider">VIEW SLIDES <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="line hidden-xs"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-10 col-md-offset-1 col-sm-12 slider-outer">
+                                            <div class="overflow">
+                                                <div class="slider text-center">
+
+                                                    <div class="project-slider-outer">
+                                                        <div class="project-slider owl-carousel">
+
+                                                            <div class="item">
+                                                                <img src="images/sunsethill.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/sunsethill.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/sunsethill.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/sunsethill.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/sunsethill.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="btn-outer text-left">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 project-detail-outer">
+
+                                            <div class="project-detail">
+                                                <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                    <div class="col-md-6 col-sm-12 vertical-middle project-detail-content">
+
+                                                        <div class="overflow">
+                                                            <div class="heading-outer">
+                                                                <h2 class="heading">Sunset Hills</h2>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <ul class="nav list">
+                                                                <li><p class="sub-heading">JS CHALLENGES</p></li>
+                                                                <li><p class="sub-heading">TBD</p></li>
+                                                            </ul>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="pera-outer m-t-30">
+                                                                <p>This is the description of what the Sunset Hills exercise will be.</p>
+                                                                <p>Please click the button below to view the challenge.</p>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="full-view-outer">
+                                                                <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                    </div> <!-- End: END LEFT SIDE -->
+                                                    <!-- Right side Image -->
+                                                    <div class="col-md-6 col-sm-12 vertical-middle overflow project-detail-image">
+                                                        <div class="row text-right display-full">
+                                                            <div class="project-detail-image-outer display-full">
+                                                                <img src="images/sunsethill.jpg" alt="Portfolio Image">
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- End: RIGHT SIDE -->
+
+                                                </div> <!-- End: .project-detail-content -->
+
+                                                <div class="clearfix"></div>
+
+                                                <!-- Back Button Area -->
+                                                <div class="overflow">
+                                                    <div class="btn-outer text-center m-t-30">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                                <!-- End: Back Button Area -->
+
+                                            </div> <!-- End: .project-detail -->
+
+                                        </div> <!-- End: .col-xs-12 -->
+
+                                    </div>
+
+                                </div> <!-- End: .item -->
+
+                                <div class="item ">
+
+                                    <div class="porifolio-section overflow">
+
+                                        <div class="col-xs-10 col-xs-offset-1">
+                                            <div class="row">
+                                                <div class="image text-center">
+                                                    <img src="images/sumofallfears.jpg" alt="Features Image">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="each-portfolio-heading">
+                                            <div class="heading-text overflow wow">
+                                                <div class="line"></div>
+                                                <div class="overflow">
+                                                    <div class="sub-heading-outer">
+                                                        <p class="sub-heading">JS CHALLENGES</p>
+                                                    </div>
+                                                </div>
+                                                <div class="text overflow">
+                                                    <div class="inner">
+                                                        Sum of all Fears
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="link-list overflow wow">
+                                                <div class="link one overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-project-detail right-icon btn-mask" href="#" data-element="project-detail">PROJECT DETAILS <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="link two overflow">
+                                                    <div class="inner">
+                                                        <a class="btn btn-slider right-icon btn-mask" data-element="slider">VIEW SLIDES <i class="icon icon-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="line hidden-xs"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-10 col-md-offset-1 col-sm-12 slider-outer">
+                                            <div class="overflow">
+                                                <div class="slider text-center">
+
+                                                    <div class="project-slider-outer">
+                                                        <div class="project-slider owl-carousel">
+
+                                                            <div class="item">
+                                                                <img src="images/sumofallfears.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/sumofallfears.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/sumofallfears.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/sumofallfears.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+                                                            <div class="item">
+                                                                <img src="images/sumofallfears.jpg" alt="Slider Images" class="img-responsive">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="btn-outer text-left">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 project-detail-outer">
+
+                                            <div class="project-detail">
+                                                <div class="project-detail-inner relative semi-dark-background overflow">
+
+                                                    <div class="col-sm-6 col-xs-12 vertical-middle project-detail-content">
+
+                                                        <div class="overflow">
+                                                            <div class="heading-outer">
+                                                                <h2 class="heading">Sum of all Fears</h2>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <ul class="nav list">
+                                                                <li><p class="sub-heading">JS CHALLENGE</p></li>
+                                                                <li><p class="sub-heading">TBD</p></li>
+                                                            </ul>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="pera-outer m-t-30">
+                                                                <p>This is the description of the challenge in this section.</p>
+                                                                <p>Please click the link below to test out this challenge.</p>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                        <div class="overflow">
+                                                            <div class="full-view-outer">
+                                                                <a href="#" class="btn right-icon btn-mask">SEE THE PROJECT <i class="icon icon-arrow-right"></i></a>
+                                                            </div>
+                                                        </div> <!-- End: .overflow -->
+
+                                                    </div> <!-- End: END LEFT SIDE -->
+                                                    <!-- Right side Image -->
+                                                    <div class="col-sm-6 col-xs-12 vertical-middle overflow project-detail-image">
+                                                        <div class="row text-right display-full">
+                                                            <div class="project-detail-image-outer display-full">
+                                                                <img src="images/sumofallfears.jpg" alt="Portfolio Image">
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- End: RIGHT SIDE -->
+
+                                                </div> <!-- End: .project-detail-content -->
+
+                                                <div class="clearfix"></div>
+
+                                                <!-- Back Button Area -->
+                                                <div class="overflow">
+                                                    <div class="btn-outer text-center m-t-30">
+                                                        <a href="#" class="btn left-icon btn-slider-back btn-mask"><i class="icon icon-arrow-left"></i> BACK TO PORTFOLIO</a>
+                                                    </div>
+                                                </div>
+                                                <!-- End: Back Button Area -->
+
+                                            </div> <!-- End: .project-detail -->
+
+                                        </div> <!-- End: .col-xs-12 -->
+
+                                    </div>
+
+                                </div> <!-- End: .item -->
+
+                            </div> <!-- End: .swiper-wrapper -->
+                        </div> <!-- End: .miniproj-container -->
+                    </div> <!-- End: .col-xs-12 -->
+
+                </div> <!-- End: .row -->
+            </div> <!-- End: .container -->
+        </div> <!-- End: .inner-container -->
+
+    </div>
+    <!--====================================-->
+    <!--End: 4th Section
+        - JS CHALLENGES PAGE
+    ====================================-->
+    <!--Start: 5th Section
+        - CONTACT PAGE
+    ====================================-->
+    <div class=" section section-item combine-section hide-overlay overflow wow" id="contact-us-section">
+        <div class="overlay-color relative bg-image-2">
+
+            <div class="inner-container contact-us" id="contact">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- Start: Section Heading -->
+                        <div class="section-header col-sm-10 col-sm-offset-1">
+                            <div class="overflow">
+                                <div class="line-outer">
+                                    <div class="line wow"></div>
+                                </div>
+                            </div>
+                            <div class="overflow">
+                                <div class="section-heading-outer m-b-15">
+                                    <p class="sub-heading wow">CONTACT</p>
+                                </div>
+                            </div>
+                            <div class="overflow">
+                                <div class="section-heading-outer p-l-50 p-r-50">
+                                    <h2 class="section-heading wow">Let's talk about the project</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End: Section Heading -->
+
+                        <div class="clearfix"></div>
+
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 overflow">
+                            <div class="row single-form-outer wow">
+
+                                <form id="contact-form" method="post" class="dark-background single-form" action="php/sendmail.php">
+
+                                    <div class="message col-xs-12">
+                                        <p class="email-loading"><img src="images/loading.gif" alt="">&nbsp;&nbsp;&nbsp;Sending...</p>
+                                        <p class="email-success"><i class="icon icon-icon-check-alt2"></i> Your quote has successfully been sent.</p>
+                                        <p class="email-failed"><i class="icon icon-icon-close-alt2"></i> Something went wrong!</p>
+                                    </div>
+
+
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="input-outer">
+                                            <div class="group relative">
+                                                <input name="name" class="contact-name form-control" id="contact-name" type="text" required="">
+                                                <label class="input-label" for="contact-name">
+                                                    <span class="label-text">YOUR NAME</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="input-outer ">
+                                            <div class="group relative">
+                                                <input name="name" class="contact-email form-control" id="contact-email" type="email" required="">
+                                                <label class="input-label" for="contact-email">
+                                                    <span class="label-text">YOUR EMAIL</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="input-outer ">
+                                            <div class="group relative">
+                                                <input name="name" class="contact-company form-control" id="contact-company" type="text" required="">
+                                                <label class="input-label" for="contact-company">
+                                                    <span class="label-text">COMPANY</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="input-outer ">
+                                            <div class="group relative">
+                                                <input name="name" class="contact-subject form-control" id="contact-subject" type="text" required="">
+                                                <label class="input-label" for="contact-subject">
+                                                    <span class="label-text">SUBJECT</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12">
+                                        <div class="input-outer ">
+                                            <div class="group relative">
+                                                <textarea class="contact-message form-control" id="contact-message" rows="3" required=""></textarea>
+                                                <label class="input-label" for="contact-message">
+                                                    <span class="label-text">YOUR MESSAGE</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Subject Button -->
+                                    <div class="btn-form text-center col-xs-12">
+                                        <div class="button-outer relative">
+                                            <button class="btn btn-fill right-icon">GET IN TOUCH <i class="icon icon-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div> <!-- /#testimonials-1 -->
+                        </div> <!-- End: .col-xs-12 -->
+
+                        <div class="clearfix"></div>
+
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 contact-footer">
+                            <div class="row">
+
+                                <div class="about col-sm-1 m-t-15">
+
+                                    <div class="overflow">
+                                        <div class="logo-outer wow">
+                                            <a href="Portfolio.html" class="logo-link">
+                                                <img src="images/logoicon.png" alt="" class="img-responsive logo">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div> <!-- End: .about -->
+                                <div class="other-link col-sm-11">
+                                    <div class="row">
+
+                                        <div class="each-section col-sm-6 text-center col-xs-12">
+                                            <div class="each-section-inner">
+
+                                                <div class="overflow">
+                                                    <p class="title wow">Location</p>
+                                                </div>
+                                                <ul class="nav">
+                                                    <li class="overflow">
+                                                        <div class="li-inner wow">
+                                                            1482 Giles Chapel Rd.
+                                                        </div>
+                                                    </li>
+                                                    <li class="overflow">
+                                                        <div class="li-inner wow">
+                                                            Asheboro, NC 27203
+                                                        </div>
+                                                    </li>
+                                                    <li class="overflow">
+                                                        <div class="li-inner wow">
+                                                            <a href="callto:9167532645" class="btn-mask">336 460 1802</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div> <!-- End: .each-section -->
+
+                                        <div class="each-section col-sm-6 text-center col-xs-12">
+                                            <div class="each-section-inner">
+
+                                                <div class="overflow">
+                                                    <p class="title wow">Other Contact</p>
+                                                </div>
+                                                <ul class="nav">
+                                                    <li class="overflow">
+                                                        <div class="li-inner wow">
+                                                            <a href="mailto:tooshort00@gmail.com" class="btn-mask">tooshort00@gmail.com</a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="overflow">
+                                                        <div class="li-inner wow">
+                                                            <ul class="nav social-icon">
+                                                                <li><a href="#" target="_blank"><i class="icon icon-social-linkedin-circle"></i></a></li>
+                                                                <li><a href="https://twitter.com/tooshort00" target="_blank"><i class="icon icon-social-twitter"></i></a></li>
+                                                                <li><a href="https://github.com/2ShortGaming" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div> <!-- End: .each-section -->
+
+                                    </div>
+                                </div> <!-- End: .other-link -->
+
+                            </div> <!-- End: .row -->
+
+                        </div> <!-- End: .contact-footer -->
+
+                    </div> <!-- End: .row -->
+                </div> <!-- End: .container -->
+            </div> <!-- End: .inner-container -->
+
+        </div>
+    </div>
+
+    <!--End: 5th Section
+        - CONTACT PAGE
+    ====================================-->
+    <!-- SCRIPTS
+    ========================================-->
+    <script src="js/plagin-js/jquery-1.11.3.js"></script>
+    <script src="js/plagin-js/preloader.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/plagin-js/plagin.js"></script>
+
+    <!-- Custom Script
+    ==========================================-->
+    <script src="js/custom-scripts.js"></script>
+
+    <script src="js/prism.js"></script>
+   
+    <!--https://icongr.am/fontawesome/github.svg?size=128&color=212121-->
+    <!--https://icongr.am/devicon/html5-plain.svg?size=128&color=ffa93d-->
+    <!--https://icongr.am/devicon/bootstrap-plain.svg?size=128&color=ffa93d-->
+    <!--https://icongr.am/devicon/csharp-plain.svg?size=128&color=ffa93d-->
+    <!--https://icongr.am/devicon/css3-plain.svg?size=128&color=ffa93d-->
+    <!--https://icongr.am/devicon/javascript-plain.svg?size=128&color=ffa93d-->
+    <!--https://icongr.am/devicon/jquery-plain.svg?size=128&color=ffa93d-->
+</body>
+
+</html>
