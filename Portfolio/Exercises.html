@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SumofallFears</title>
+
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        .special {
+            border: 3px solid black;
+        }
+
+        .btnWide, .txtWide {
+       
+            width: 100%;
+        }
+
+        .btnMarg {
+            margin-top: 20px;
+        }
+    </style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row h1">
+            <div class="col text-center">
+                My first JavaScript exercise
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col"><input class="txtWide" id="mthInput1" placeholder="Enter number 1" /></div>
+            <div class="col"><input class="txtWide" id="mthInput2" placeholder="Enter number 2" /></div>
+            <div class="col"><input class="txtWide" id="mthInput3" placeholder="Enter number 3" /></div>
+            <div class="col"><input class="txtWide" id="mthInput4" placeholder="Enter number 4" /></div>
+            <div class="col"><input class="txtWide" id="mthInput5" placeholder="Enter number 5" /></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button id="btnMath" class=" btnMarg btn btn-dark btnWide">Calculate</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button id="btnMathClear" class="btn btn-success btnWide">Clear</button>
+            </div>
+        </div>
+
+
+
+        <hr />
+
+        <div class="row">
+            <div class="offset-1 col-10">
+                <table id="tblMath" class="table">
+                    <tr>
+                        <th>Sum</th>
+                        <th>Product</th>
+                        <th>Average</th>
+                        <th>Largest</th>
+                        <th>Smallest</th>
+                    </tr>
+                    <tr>
+                        <td id="out1"></td>
+                        <td id="out2"></td>
+                        <td id="out3"></td>
+                        <td id="out4"></td>
+                        <td id="out5"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script src="SCRIPTS/jquery-3.5.1.min.js"></script>
+        <script src="SCRIPTS/bootstrap.min.js"></script>
+
+        <script>
+
+            
+            $("#tblMath").hide();
+
+        
+            $("#btnMath").on("click", function () {
+
+              
+                let num1 = Number($("#mthInput1").val());
+                let num2 = Number($("#mthInput2").val());
+                let num3 = Number($("#mthInput3").val());
+                let num4 = Number($("#mthInput4").val());
+                let num5 = Number($("#mthInput5").val());
+
+                if (isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4) || isNaN(num5)) {
+                    alert("Please only enter numbers...");
+                    ClearMathInputs();
+                    return;
+                }
+
+
+
+                let sum = num1 + num2 + num3 + num4 + num5;
+                let product = num1 * num2 * num3 * num4 * num5;
+                let avg = sum / 5;
+
+                let largest = Math.max(num1, num2, num3, num4, num5);
+                let smallest = Math.min(num1, num2, num3, num4, num5);
+
+
+                $("#out1").text(sum);
+                $("#out2").text(product);
+                $("#out3").text(avg);
+                $("#out4").text(largest);
+                $("#out5").text(smallest);
+
+                $("#tblMath").show();
+
+            });
+
+            $("#btnMathClear").on("click", function () {
+               
+                $("#mthInput1, #mthInput2, #mthInput3, #mthInput4, #mthInput5").val("");
+                $("#out1, #out2, #out3, #out4, #out5").text("");
+
+           
+                $("#tblMath").hide();
+            });
+
+            function ClearMathInputs() {
+                $("#mthInput1, #mthInput2, #mthInput3, #mthInput4, #mthInput5").val("");
+            }
+
+            $("#mthInput1, #mthInput2, #mthInput3, #mthInput4, #mthInput5").on("keydown", function (e) {
+                //var valid = false;
+
+                //if (e.keyCode >= 48 && e.keyCode <= 57) {
+                //    valid = true;
+                //}
+
+                //if (e.keyCode >= 96 && e.keyCode <= 105) {
+                //    valid = true;
+                //}
+
+                //if (e.keyCode == 9) {
+                //    valid = true;
+                //}
+
+                //return valid;
+
+                let goodRange1 = e.keyCode >= 48 && e.keyCode <= 57;
+                let goodRange2 = e.keyCode >= 96 && e.keyCode <= 105;
+                let isTab = e.keyCode == 9;
+
+                return goodRange1 || goodRange2 || isTab;
+            });
+
+
+
+            function CheckNumbersOnly(char) {
+
+            }
+
+
+
+
+
+
+
+
+
+        </script>
+
+
+</body>
+</html>
