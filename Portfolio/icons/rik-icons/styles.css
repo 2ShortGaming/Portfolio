@@ -978,7 +978,7 @@
   content: "\e134";
 }
 .icon-social-github-cirlce:before {
-  content: "\Git";
+    content: "https://icongr.am/devicon/github-original.svg?size=80&color=f7ac54";
 }
 .icon-social-googledrive:before {
   content: "\e135";
