@@ -82,6 +82,7 @@
     <Content Include="icons\rik-icons\fonts\rik.svg" />
     <Content Include="icons\rik-icons\icons-reference.html" />
     <Content Include="icons\rik-icons\styles.css" />
+    <Content Include="images\beetle.jpg" />
     <Content Include="images\Blog\blg1.jpg" />
     <Content Include="images\Blog\blg2.jpg" />
     <Content Include="images\Blog\blg3.jpg" />
