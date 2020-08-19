@@ -82,12 +82,14 @@
     <Content Include="icons\rik-icons\fonts\rik.svg" />
     <Content Include="icons\rik-icons\icons-reference.html" />
     <Content Include="icons\rik-icons\styles.css" />
+    <Content Include="images\android-chrome-192x192.png" />
     <Content Include="images\beetle.jpg" />
     <Content Include="images\Blog\blg1.jpg" />
     <Content Include="images\Blog\blg2.jpg" />
     <Content Include="images\Blog\blg3.jpg" />
     <Content Include="images\Blog\blg4.jpeg" />
     <Content Include="images\Blog\blg5.jpg" />
+    <Content Include="images\favicon.ico" />
     <Content Include="images\faviconLogo.png" />
     <Content Include="images\fb1.jpg" />
     <Content Include="images\fb2.jpg" />
