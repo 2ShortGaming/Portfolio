@@ -103,6 +103,7 @@
     <Content Include="images\features-6.jpg" />
     <Content Include="images\features-7.jpg" />
     <Content Include="images\fizzbuzz.jpg" />
+    <Content Include="images\fp.jpg" />
     <Content Include="images\github.jpeg" />
     <Content Include="images\hexagon.jpg" />
     <Content Include="images\hexgrey.jpg" />
