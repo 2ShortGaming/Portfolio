@@ -2226,6 +2226,7 @@ section.section {
   width: -o-calc( 100% - 65px );
   width: calc( 100% - 65px );
   width: expression( 100% - 65px );
+  
   text-align: left;
   float: right;
   padding: 10px 20px 0px 20px;
@@ -2637,6 +2638,68 @@ section.section {
   -webkit-transition-delay: 1s ;
   transition-delay: 1s ;
 }
+/**
+* ========================================
+* Carousel Slider Custom Style
+* ========================================
+*/
+/* Carousel Slider Pagination Style */
+.owl-pagination {
+    display: inline-block;
+    float: right;
+}
+
+.owl-pagination .owl-page {
+    width: 15px;
+    height: 3px;
+    background-color: #4C4C4C;
+    margin: 21px 0 15px 15px;
+    float: right;
+    transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    webkit-transform-style: preserve-3d;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    perspective: 1000;
+    -o-perspective: 1000;
+    -ms-perspective: 1000;
+    -moz-perspective: 1000;
+    -webkit-perspective: 1000;
+}
+
+    .owl-pagination .owl-page.active {
+        background-color: #f7ac54;
+    }
+/* Carousel Slider NEXT & PREV Button Style */
+.owl-buttons .owl-next {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-indent: -111111px;
+}
+
+    .owl-buttons .owl-next:hover {
+        cursor: w-resize;
+    }
+
+.owl-buttons .owl-prev {
+    display: none;
+}
+
 /**
  * ========================================
  * Section Animation
